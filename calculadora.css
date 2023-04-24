@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    padding-top: 60px;
+    color: white;
+    text-align: center;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-height: 550px;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    border: solid 2px rgba(0, 0, 0, 0.441);
+}
+#input{
+   background-color: rgba(0, 0, 0, 0.35);
+   font-size: 30px;
+   font-variant: numeric;
+   display: block;
+   text-align: end;
+   max-width: 246px;
+   height: 20px;
+   padding-top: 25px;
+   padding-bottom: 20px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   border: solid 2px rgba(0, 0, 0, 0.256)
+}
+button{
+    padding: 22px;
+    font-size: 25px;
+    width: 60px;
+    height: 100%;
+    border-radius: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.43);
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+}
+
+#result{
+    background-color: rgba(0, 0, 0, 0.35);
+    color: black;
+    margin-top: 10px;
+    height: 70px;
+    width: 246px;
+    left: 13%;
+    font-size: 30px;
+    position: fixed;
+    text-align: end;
+    border-radius: 10px;
+    border: solid 2px rgba(0, 0, 0, 0.256);
+}
+#copyToClipboard{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    padding-right: 30px;
+    padding-top: 90px;
+    position: static;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.398) ;
+    border: none;
+}
+.success{
+    color: rgb(249, 2, 2);
+}
+.success:hover{
+    cursor: pointer;
+}
+.error{
+    color: rgb(249, 0, 0);
+}

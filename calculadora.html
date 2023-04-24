@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>calculator</h1>
+    </header>
+    <section class="container">
+        <input type="text" id="input">
+            <div id="keys">
+                <table  >
+                    <tr>
+                        <td><button class="charKey" id="clear">C</button></td>
+                        <td><button class="charKey" data-value="(">(</button></td>
+                        <td><button class="charKey" data-value=")">)</button></td>
+                        <td><button class="charKey" data-value="/">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="charKey" data-value="7">7</button></td>
+                        <td><button class="charKey" data-value="8">8</button></td>
+                        <td><button class="charKey" data-value="9">9</button></td>
+                        <td><button class="charKey" data-value="*">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="charKey" data-value="4">4</button></td>
+                        <td><button class="charKey" data-value="5">5</button></td>
+                        <td><button class="charKey" data-value="6">6</button></td>
+                        <td><button class="charKey" data-value="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="charKey" data-value="1">1</button></td>
+                        <td><button class="charKey" data-value="2">2</button></td>
+                        <td><button class="charKey" data-value="3">3</button></td>
+                        <td><button class="charKey" data-value="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="charKey" data-value="0">0</button></td>
+                        <td><button class="charKey" data-value=".">.</button></td>
+                        <td><button class="charKey" data-value="%">%</button></td>
+                        <td><button id="equal">=</button></td>
+                    </tr>
+                </table>
+                <button id="copyToClipboard">Copy</button>
+                <input type="text" id="result" disabled>
+            </div>
+    </section>
+</body>
+
+</html>
